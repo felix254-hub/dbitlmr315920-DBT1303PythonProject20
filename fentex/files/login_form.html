@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fentex Security</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+
+<body>
+    <div class="form-style-6">
+        <h1> Login </h1><br>
+        <form action="home_security" method="POST">
+            Email:<br>
+            <input type="text" name="email" placeholder="Your Email">
+            <br> Password:
+            <br>
+            <input type="password" name="password">
+            <br><br> Minimum detection area:<br>
+            <input type="number" name="min_detection_area" value="500">
+            <br><br>
+            <input type="submit" value="Submit">
+            <br><br>
+            <h2> Start Home Security </h2><br>
+            <input type="radio" name="app_status" value="start">Start<br>
+            <input type="radio" name="app_status" value="stop" checked="checked">Stop<br>
+            <br><br>
+            <i></i>
+        </form>
+    </div>
+
+</body>
+
+</html>
